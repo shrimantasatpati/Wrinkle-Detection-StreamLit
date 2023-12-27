@@ -2,6 +2,7 @@ import streamlit as st
 import torch
 from ultralytics import YOLO
 from PIL import Image
+import numpy as np
 
 # Setting page layout
 st.set_page_config(
@@ -63,8 +64,12 @@ with col2:
                 )
                 boxes = results[0].boxes
                 res_plotted = results[0].plot()[:, :, ::-1]
-                st.image(res_plotted, caption='Segmented Image',
-                         use_column_width=True)
+
+                # Convert the PIL image to a NumPy array
+                numpy_image = np.array(res_plotted)
+
+                # Display the segmented image
+                st.image(numpy_image, caption='Segmented Image', use_column_width=True)
 
             with st.expander("Segmentation Results"):
                 for box in boxes:
@@ -74,8 +79,3 @@ with col2:
             st.exception(ex)
     else:
         st.error("Please select a valid source type!")
-
-
-
-
-
