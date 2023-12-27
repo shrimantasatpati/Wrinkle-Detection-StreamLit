@@ -56,8 +56,8 @@ with col2:
                     source=uploaded_image,
                     max_det=max_det,
                     conf=confidence,
-                    show_labels=show_labels,
-                    show_boxes=show_boxes,
+                    # show_labels=show_labels,
+                    # show_boxes=show_boxes,
                     save=False,
                     device="cpu"
                 )
