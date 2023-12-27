@@ -63,8 +63,6 @@ with col2:
                 )
                 boxes = results[0].boxes
                 res_plotted = results[0].plot()[:, :, ::-1]
-                # Save the segmented image
-                cv2.imwrite("segmented_image.jpg", np.array(res_plotted))
                 st.image(res_plotted, caption='Segmented Image',
                          use_column_width=True)
 
