@@ -63,11 +63,7 @@ with col2:
                 )
                 boxes = results[0].boxes
                 res_plotted = results[0].plot()[:, :, ::-1]
-                # Instead of trying to write the results to an image file, 
-                # convert the results directly to a PIL Image object
-                # so it can be displayed directly into Streamlit.
-                image = Image.fromarray(res_plotted)
-                st.image(image, caption='Segmented Image',
+                st.image(res_plotted, caption='Segmented Image',
                          use_column_width=True)
 
             with st.expander("Segmentation Results"):
