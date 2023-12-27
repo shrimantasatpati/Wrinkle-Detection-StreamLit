@@ -58,7 +58,7 @@ with col2:
                     conf=confidence,
                     show_labels=show_labels,
                     show_boxes=show_boxes,
-                    save=True,
+                    save=False,
                     device="cpu"
                 )
                 boxes = results[0].boxes
