@@ -12,6 +12,10 @@ Dataset: RoboFlow
 
 - Python 3.11+
 - pip
+- opencv-contrib-python-headless
+- ultralytics
+- streamlit
+- opencv-python
 
 ### Installation
 
