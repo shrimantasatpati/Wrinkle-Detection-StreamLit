@@ -27,4 +27,3 @@ cd shrimantasatpati/Wrinkle-Detection-StreamLit
 ```
 
 Finetuned model weight: [best.pt](best.pt)
-'https://github.com/shrimantasatpati/Wrinkle-Detection-StreamLit/blob/main/Video.mp4'
