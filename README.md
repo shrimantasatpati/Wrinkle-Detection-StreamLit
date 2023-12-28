@@ -25,4 +25,4 @@ Clone the repository:
 git clone https://github.com/shrimantasatpati/Wrinkle-Detection-StreamLit.git
 cd shrimantasatpati/Wrinkle-Detection-StreamLit
 
-Finetuned model weight: best.pt
+Finetuned model weight: [best.pt](best.pt)
