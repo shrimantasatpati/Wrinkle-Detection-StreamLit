@@ -23,7 +23,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/shrimantasatpati/Wrinkle-Detection-StreamLit.git
-cd shrimantasatpati/Wrinkle-Detection-StreamLit
+cd {your_username}/Wrinkle-Detection-StreamLit
 ```
 
 Finetuned model weight: [best.pt](best.pt).
