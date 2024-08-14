@@ -2,3 +2,4 @@ opencv-contrib-python-headless
 ultralytics
 streamlit
 opencv-python
+opencv-python-headless
